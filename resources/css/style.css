@@ -19,7 +19,7 @@ header {
   z-index: 100;
   height: 64px;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1024px;
   background-color: #f08080;
   font-family: Verdana, sans-serif;
 }
@@ -74,30 +74,39 @@ nav span a {
   background-color: lightgrey;
   border: black 6px dotted;
   margin: 0;
-  max-width: 1300px;
+  max-width: 1024px;
   padding-top: 6rem;
   box-sizing: border-box;
 }
 
 .banner {
-  border: darkblue 5px solid;
+  /* border: darkblue 5px solid; */
   /* display: flex;
   flex-direction: column; */
   margin: 32px 24px 32px 24px;
+  width: 60%;
+  overflow: hidden;
+
 
 }
 
 .banner img {
-  width: 60%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  /* padding: 32px 24px 32px 24px; */
 }
 
 .learn {
   width: 40%;
   margin: auto;
+  text-align: center;
+
 }
 
 .learn h1 {
-  color: #8b0000;
+  /* color: #8b0000; */
+  color: #708090;
   font-weight: bold;
   font-family: Helvetica; sans-serif;
   font-size: 2.5rem;
@@ -109,11 +118,22 @@ nav span a {
   color: #808080;
   font-weight: 300;
   font-family: Helvetica; sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.50rem;
   line-height: 1.5;
   text-align: center;
+  padding-top: 20px;
+  padding-right:
 }
-.start {
+.learn a {
   background-color: #8b0000;
-  font-weight: bold;
+  font-weight: 800;
+  text-align: center;
+  color: #c0c0c0;
+  font-size: 1.75rem;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+  line-height: 4;
+  font-family: Helvetica, sans-serif;
+  border-radius: 10px 100px / 120px;
+
 }
