@@ -19,6 +19,7 @@ header {
   z-index: 100;
   height: 64px;
   width: 100%;
+  max-width: 1300px;
   background-color: #f08080;
   font-family: Verdana, sans-serif;
 }
@@ -30,7 +31,7 @@ header {
 }
 
 .logo img {
-  padding: 32px 0px 32px 24px;
+  margin: 32px 0px 32px 24px;
 
 }
 
@@ -64,5 +65,55 @@ nav span a {
   padding-right: 16px;
   text-decoration: none;
   font-size: 18px;
+}
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+  border: black 6px dotted;
+  margin: 0;
+  max-width: 1300px;
+  padding-top: 6rem;
+  box-sizing: border-box;
+}
+
+.banner {
+  border: darkblue 5px solid;
+  /* display: flex;
+  flex-direction: column; */
+  margin: 32px 24px 32px 24px;
+
+}
+
+.banner img {
+  width: 60%;
+}
+
+.learn {
+  width: 40%;
+  margin: auto;
+}
+
+.learn h1 {
+  color: #8b0000;
+  font-weight: bold;
+  font-family: Helvetica; sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.learn h3 {
+  color: #808080;
+  font-weight: 300;
+  font-family: Helvetica; sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.start {
+  background-color: #8b0000;
+  font-weight: bold;
 }
