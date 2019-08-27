@@ -108,7 +108,8 @@ nav span a {
 
 .learn h1 {
   /* color: #8b0000; */
-  color: #708090;
+/*  color: #708090; */
+  color: #778899;
   font-weight: bold;
   font-family: Helvetica; sans-serif;
   font-size: 2.5rem;
@@ -171,7 +172,8 @@ a:hover {
 
 .content h2 {
   /* color: #8b0000; */
-  color: #708090;
+  color:  #778899;
+  /* color: #708090; */
   font-weight: bold;
   font-family: Helvetica; sans-serif;
   font-size: 2rem;
@@ -299,7 +301,7 @@ a:hover {
 /* Learning Section */
 
 .learn-contain {
-  
+
 
 }
 
