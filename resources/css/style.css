@@ -124,10 +124,9 @@ nav span a {
   line-height: 1.5;
   text-align: center;
   padding-top: 20px;
-  padding-right:
 }
 .learn a {
-  background-color: #f08080;1
+  background-color: #f08080;
   /* background-color: #8b0000; */
   font-weight: 1000;
   text-align: center;
@@ -150,9 +149,9 @@ a:hover {
 
 .info {
   /* border: darkblue 5px solid; */
-  /* display: flex;
-  flex-direction: column; */
-  margin: 32px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px 32px 24px;
   width: 60%;
   overflow: hidden;
 }
@@ -178,6 +177,155 @@ a:hover {
   font-size: 2rem;
   line-height: 1;
   text-align: center;
-  padding-top: 32px;
-  padding-bottom: 24px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.content p {
+  font-style: italic;
+  line-height: 1;
+  color: #808080;
+  font-weight: 500;
+  margin: 1rem 0;
+  font-family: Georgia, sans-serif;
+}
+
+.content a {
+  margin: 32px 0px 32px 50px;
+  font-family: Times, sans-serif;
+  color: #708090;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.content a:hover{
+  color: #f08080;
+}
+
+.campus-info {
+
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.campus-info .orientation img {
+  overflow: hidden;
+  width: 35%;
+}
+
+.orientation {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  /* border: black 2px solid;
+
+  justify-content: space-between; */
+}
+
+.description {
+  width: 65%;
+}
+
+.description h3 {
+  /* color: #708090; */
+  color: black;
+  font-weight: 600;
+  font-family: 'Georgia'; sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  text-align: center;
+  padding-bottom: 8px;
+  text-decoration: underline;
+}
+
+.description p {
+  /* color: #696969; */
+  color: black;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 600;
+  padding-bottom: 8px;
+  font-size: 0.80rem;
+  line-height: 1.5;
+  font-style: italic;
+
+}
+
+.description a {
+  /* color: black; */
+  /* color: #708090; */
+  color: blue;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-family: Helvetica, sans-serif;
+}
+
+.description a:hover {
+  color: #f08080;
+}
+
+.campus-info .our-campus img {
+  overflow: hidden;
+  width: 35%;
+}
+
+.our-campus {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  /* border: black 2px solid;
+
+  justify-content: space-between; */
+}
+
+.campus-info .guest img {
+  overflow: hidden;
+  width: 35%;
+}
+
+.guest {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  /* border: black 2px solid;
+
+  justify-content: space-between; */
+}
+
+.learning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.learning h2 {
+  color: #708090;
+  font-weight: bold;
+  font-family: Helvetica; sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.courses {
+  border: black 2px dotted;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin: 0px 72px 32px 72px; */
+}
+.course-images {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center; */
+    margin: 1rem;
+    width: 354px;
 }
