@@ -3,7 +3,7 @@
 /* Universal Styles */
 
  body {
-  background-color: ;
+  background-color: lightgrey;
 
 }
 
@@ -38,7 +38,7 @@ header {
 .logo .colmar {
   color: black;
   font-weight: bold;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   margin-left: 0;
   padding: 0;
   font-size: 18px;
@@ -47,7 +47,7 @@ header {
 .logo .academy {
   color: lightgrey;
   font-weight: 400;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-size: 18px;
 }
 
@@ -257,7 +257,7 @@ a:hover {
 .description a {
   /* color: black; */
   /* color: #708090; */
-  color: blue;
+  color: #0000cd;
   font-weight: 400;
   text-decoration: none;
   font-size: 0.85rem;
@@ -296,10 +296,17 @@ a:hover {
   justify-content: space-between; */
 }
 
-.learning {
+/* Learning Section */
+
+.learn-contain {
+  
+
+}
+
+ .learning {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -310,22 +317,52 @@ a:hover {
   font-size: 2rem;
   line-height: 1;
   text-align: center;
-  margin-bottom: 32px;
+  margin-top: 32px;
 }
 
 .courses {
   border: black 2px dotted;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  /* margin: 0px 72px 32px 72px; */
+  box-sizing: border-box;
+  margin: 32px 72px 32px 72px;
+
 }
-.course-images {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center; */
+.courses .course-images {
+    display: block;
+    /* flex-wrap: wrap; */
+    align-items: center;
     margin: 1rem;
     width: 354px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    overflow: hidden;
+    background-color: #778899;
+    border: black 2px solid;
+
+}
+
+.courses .course-images .classes {
+  text-align: center;
+  display: block;
+  padding-left: 16px;
+  color: WhiteSmoke;
+}
+
+.courses .course-images h3 {
+  padding-top: 16px;
+  line-height: 2;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.75rem;
+
+}
+
+.courses .course-images p {
+  padding-top: 8px;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 1.05rem;
+  font-weight: 100;
 }
