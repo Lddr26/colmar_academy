@@ -8,7 +8,14 @@
 
 }
 
+hr {
+  background-color: aliceblue;
+  width: 70%;
+  height: 0.10px;
+  border-style: outset;
+  align: center;
 
+}
 
 /* Header/Nav */
 
@@ -16,11 +23,11 @@ header {
   display: flex;
   align-items: center;
   position: fixed;
-  border-bottom: lightgrey 1px solid;
-  z-index: 100;
+  border-bottom: lightgrey 2px solid;
+  z-index: 200;
   height: 64px;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1300px;
   background-color: #f08080;
   font-family: Verdana, sans-serif;
   margin: 0;
@@ -76,28 +83,23 @@ nav span a {
   align-items: center;
   /* background-color: lightgrey; */
   margin: 0;
-  max-width: 1280px;
+  max-width: 1300px;
   padding-top: 6rem;
   box-sizing: border-box;
-  border: black 3px solid;
 }
 
 .banner {
-  /* border: darkblue 5px solid; */
-  /* display: flex;
-  flex-direction: column; */
   margin: 32px 24px 32px 24px;
   width: 60%;
   overflow: hidden;
-
-
 }
 
 .banner img {
   max-width: 100%;
   height: auto;
   display: block;
-  /* padding: 32px 24px 32px 24px; */
+  border-radius: 10px;
+
 }
 
 .learn {
@@ -108,8 +110,6 @@ nav span a {
 }
 
 .learn h1 {
-  /* color: #8b0000; */
-/*  color: #708090; */
   color: #778899;
   font-weight: bold;
   font-family: Helvetica; sans-serif;
@@ -129,10 +129,8 @@ nav span a {
 }
 .learn a {
   background-color: #f08080;
-  /* background-color: #8b0000; */
   font-weight: 1000;
   text-align: center;
-  /* color: #c0c0c0; */
   color: WhiteSmoke;
   font-size: 1.75rem;
   padding: 8px 20px 8px 20px;
@@ -150,7 +148,6 @@ a:hover {
 /* Campus Info Section */
 
 .info {
-  /* border: darkblue 5px solid; */
   display: flex;
   flex-direction: column;
   margin: 0 24px 32px 24px;
@@ -162,13 +159,18 @@ a:hover {
   max-width: 100%;
   height: auto;
   display: block;
-  /* padding: 32px 24px 32px 24px; */
+  border-radius: 8px;
 }
+
 
 .campus-info {
   width: 40%;
   margin: auto;
   text-align: center;
+}
+.campus-info img {
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 5px lightslategray;
 }
 
 .content h2 {
@@ -224,9 +226,6 @@ a:hover {
   display: flex;
   align-items: center;
   padding: 16px;
-  /* border: black 2px solid;
-
-  justify-content: space-between; */
 }
 
 .description {
@@ -258,13 +257,11 @@ a:hover {
 }
 
 .description a {
-  /* color: black; */
-  /* color: #708090; */
-  color: #0000cd;
-  font-weight: 400;
+  color: #696969;
+  font-weight: 600;
   text-decoration: none;
-  font-size: 0.85rem;
-  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-family: Georgia, sans-serif;
 }
 
 .description a:hover {
@@ -280,9 +277,6 @@ a:hover {
   display: flex;
   align-items: center;
   padding: 16px;
-  /* border: black 2px solid;
-
-  justify-content: space-between; */
 }
 
 .campus-info .guest img {
@@ -304,9 +298,6 @@ a:hover {
   margin: 0;
   max-width: 1280px;
   box-sizing: border-box;
-  border: black 3px solid;
-  /* justify-content: center;
-  padding-top: 6rem; */
   flex-direction: column;
 }
 
@@ -328,14 +319,11 @@ a:hover {
 }
 
 .courses {
-  /* border: black 2px dotted; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   box-sizing: border-box;
   margin: 32px 72px 32px 72px;
-
-
 }
 .courses .course-images {
     display: block;
@@ -347,7 +335,6 @@ a:hover {
     padding-bottom: 32px;
     overflow: hidden;
     background-color: #778899;
-    /* border: black 2px solid; */
 }
 
 .courses .course-images .classes {
@@ -388,41 +375,40 @@ a:hover {
   margin: 0;
   max-width: 1280px;
   box-sizing: border-box;
-  border: black 3px solid;
-
-
 }
-/*.thesis-exhibit {
+.thesis-exhibit {
  display: flex;
  align-items: center;
  flex-direction: column;
-
-}*/
-thesis-exhibit h2 {
+ width: 1280px;
+}
+.thesis-exhibit h2 {
  color: #708090;
  font-weight: bold;
  font-family: Helvetica; sans-serif;
  font-size: 2rem;
- line-height: .50;
- text-align: center;
+ line-height: 1;
  margin-top: 32px;
  margin-bottom: 32px;
 }
+
+/* Thesis Images */
 .video-container {
   display: flex;
   flex-direction: column;
-  margin: 32px 24px 32px 24px;
+  margin: 32px 24px;
   width: 60%;
   height: auto;
   overflow: hidden;
-  border: black 2px solid;
-  background-color: white;
+  /* background-color: white; */
+
 }
 
 .video-container video {
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 20px;
 }
 .reimagine h3 {
   color:  slategray;
@@ -452,18 +438,17 @@ thesis-exhibit h2 {
   flex-direction: column;
   width: 40%;
   justify-content: center;
-
+  margin-bottom: 10%;
+  padding-left: 2%;
 
 }
 .fisma {
   display: flex;
   padding: 16px 16px 35px 16px;
-  background-color: lavender;
+  background-color: aliceblue;
   border-radius: 25px;
   margin: 0px 24px 16px 0px;
   box-shadow: 5px 10px #888888;
-
-
 }
 .fisma img {
   width: 35%;
@@ -509,7 +494,8 @@ footer {
   padding-top: 16px;
   max-width: 1280px;
   font-family: Helvetica,sans-serif;
-
+  border-top: lightslategray 0.25px solid;
+  border-style: outset;
 }
 footer span {
   padding-left: 24px;
@@ -537,6 +523,7 @@ footer span {
 .footer a {
   color: black;
   text-decoration: none;
-
-
+}
+.footer a:hover {
+  color: steelblue;
 }
