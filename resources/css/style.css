@@ -3,7 +3,8 @@
 /* Universal Styles */
 
  body {
-  background-color: lightgrey;
+  background-color: snow;
+  width: 1280;
 
 }
 
@@ -73,7 +74,7 @@ nav span a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   margin: 0;
   max-width: 1280px;
   padding-top: 6rem;
@@ -384,20 +385,20 @@ a:hover {
 .thesis-container {
   display: flex;
   align-items: center;
-  flex-direction: column;
   margin: 0;
   max-width: 1280px;
   box-sizing: border-box;
   border: black 3px solid;
+
+
 }
-.thesis-exhibit {
+/*.thesis-exhibit {
  display: flex;
  align-items: center;
- justify-content: center;
- width: 100%;
-}
+ flex-direction: column;
 
-.thesis-exhibit h2 {
+}*/
+thesis-exhibit h2 {
  color: #708090;
  font-weight: bold;
  font-family: Helvetica; sans-serif;
@@ -407,30 +408,130 @@ a:hover {
  margin-top: 32px;
  margin-bottom: 32px;
 }
+.video-container {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px 32px 24px;
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  border: black 2px solid;
+  background-color: white;
+}
+
+.video-container video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.reimagine h3 {
+  color:  slategray;
+  /* color: #708090; */
+  font-weight: 900;
+  font-style: oblique;
+  font-family: Helvetica; sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+.reimagine p {
+  font-style: italic;
+  line-height: 1;
+  color: #808080;
+  font-weight: 600;
+  margin-bottom: 32px;
+  margin-left: 5px;
+  font-family: Georgia, sans-serif;
+  font-size: 1rem;
+}
+.thesis-images {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+
+
+}
+.fisma {
+  display: flex;
+  padding: 16px 16px 35px 16px;
+  background-color: lavender;
+  border-radius: 25px;
+  margin: 0px 24px 16px 0px;
+  box-shadow: 5px 10px #888888;
+
+
+}
+.fisma img {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+
+}
+.design {
+  width: 65%;
+  padding: 16px;
+
+}
+
+.design h3 a {
+  /* color: #708090; */
+  color: black;
+  font-weight: 600;
+  font-family: 'Georgia'; sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+}
+
+.design p {
+  color: #696969;
+  /* color: black; */
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 600;
+  padding-top: 10px;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  font-family: fantasy;
+}
+
+.design a:hover {
+  color: slategray;
+}
 
 /* Footer Section */
 
-footer .copyright {
-  border: darkblue 2px dotted;
-  display: flex;
-  align-items: center;
-  margin: 16px 24px 16px 24px;
+footer {
+  padding-top: 16px;
   max-width: 1280px;
-  width: 100%;
   font-family: Helvetica,sans-serif;
-  box-sizing: border-box;
+
+}
+footer span {
+  padding-left: 24px;
+
 }
 .footer {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
   width: auto;
 
 
 }
+.footer ul {
+  display: block;
+  margin-right: 24px;
+  margin-bottom: 10px;
+  margin-top: -16px;
+
+}
 .footer li {
   padding: 5px;
-  display: inline-block;
+  display: inline;
 
 }
 .footer a {
