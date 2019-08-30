@@ -75,6 +75,38 @@ nav span a {
   font-size: 18px;
 }
 
+header .mobile {
+  display: none;
+}
+
+/* Mobile Header */
+@media only screen and (max-width: 680px) {
+header .mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f08080;
+  height: 64px;
+  width: 100%;
+  }
+
+  header .mobile a img{
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  header .logo img {
+    display: none;
+  }
+  header .logo span {
+    display: none;
+  }
+  header nav span {
+    display: none;
+  }
+
+}
+
 /* Banner Section */
 
 .container {
@@ -143,6 +175,36 @@ nav span a {
 
 a:hover {
   color: #708090;
+}
+
+  /* Mobile Banner */
+  @media only screen and (max-width: 680px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+
+  .banner {
+    width: 100%;
+    margin: auto;
+
+  }
+
+  .learn h1 {
+    width: 100%;
+
+    font-size: 2rem;
+    line-height: 1;
+    margin-top: 32px;
+  }
+  .learn h3 {
+    margin-bottom: 24px;
+  }
+  .learn a {
+    margin-bottom: 32px;
+    }
 }
 
 /* Campus Info Section */
@@ -365,6 +427,30 @@ a:hover {
   line-height: 1.5;
   font-size: 1.05rem;
   font-weight: 100;
+}
+.mobile-image {
+  display: none;
+}
+
+/* Mobile Campus Info */
+
+@media only screen and (max-width: 680px) {
+
+  .info {
+    display: none;
+  }
+  .desktop-image {
+    display: none;
+  }
+
+.mobile-image {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+
+
 }
 
 /* Thesis Section */
