@@ -80,7 +80,7 @@ header .mobile {
 }
 
 /* Mobile Header */
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 680px)  {
 header .mobile {
   display: flex;
   justify-content: space-around;
@@ -178,7 +178,7 @@ a:hover {
 }
 
   /* Mobile Banner */
-  @media only screen and (max-width: 680px) {
+@media only screen and (max-width: 680px) {
   .container {
     flex-direction: column;
     justify-content: flex-start;
@@ -224,21 +224,8 @@ a:hover {
   border-radius: 8px;
 }
 
-
-.campus-info {
-  width: 40%;
-  margin: auto;
-  text-align: center;
-}
-.campus-info img {
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px 5px lightslategray;
-}
-
 .content h2 {
-  /* color: #8b0000; */
   color:  #778899;
-  /* color: #708090; */
   font-weight: bold;
   font-family: Helvetica; sans-serif;
   font-size: 2rem;
@@ -270,93 +257,124 @@ a:hover {
   color: #f08080;
 }
 
-.campus-info {
-
-  width: 40%;
+.campus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 0;
+  width: 40%;
+  margin: auto;
+
 }
 
-.campus-info .orientation img {
-  overflow: hidden;
-  width: 35%;
-}
-
-.orientation {
+.campus-info {
   display: flex;
   align-items: center;
   padding: 16px;
 }
 
-.description {
-  width: 65%;
+.campus-info .full-image {
+  overflow: hidden;
+  width: 35%;
 }
 
-.description h3 {
-  /* color: #708090; */
+.campus-info .full-image {
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 5px lightslategray;
+}
+
+.campus-info .description {
+  width: 65%;
+  text-align: center;
+}
+
+.campus-info .description h3 {
   color: black;
   font-weight: 600;
   font-family: 'Georgia'; sans-serif;
   font-size: 1.35rem;
   line-height: 1.5;
-  text-align: center;
   padding-bottom: 8px;
   text-decoration: underline;
 }
 
-.description p {
-  /* color: #696969; */
+.campus-info .description p {
   color: black;
   font-family: 'Helvetica', sans-serif;
   font-weight: 600;
   padding-bottom: 8px;
+  padding-left: 10px;
   font-size: 0.80rem;
   line-height: 1.5;
   font-style: italic;
-
 }
 
-.description a {
+.campus-info .description a {
   color: #696969;
   font-weight: 600;
   text-decoration: none;
   font-size: 1rem;
   font-family: Georgia, sans-serif;
+  text-align: center;
 }
 
-.description a:hover {
+.campus-info .description a:hover {
   color: #f08080;
 }
 
-.campus-info .our-campus img {
-  overflow: hidden;
-  width: 35%;
+.campus-info .mobile-image {
+  display: none;
 }
 
-.our-campus {
-  display: flex;
-  align-items: center;
-  padding: 16px;
+/* Mobile Campus Info */
+
+@media only screen and (max-width: 680px)  {
+
+  .info {
+    display: none;
+  }
+.campus {
+  width: 100%;
+}
+  .campus .campus-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 16px;
+    padding: 16px;
+    box-sizing: border-box
+  }
+  .campus-info .full-image {
+    display: none;
+  }
+
+.campus .campus-info .mobile-image {
+  display: block;
+  width: 100;
+  }
+
+.campus-info .description {
+  width: 100%;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.campus-info .description h3 {
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+.campus-info .description p {
+  line-height: 1;
+}
+.campus-info .description a {
+  color: black;
 }
 
-.campus-info .guest img {
-  overflow: hidden;
-  width: 35%;
-}
-
-.guest {
-  display: flex;
-  align-items: center;
-  padding: 16px;
 }
 
 /* Learning Section */
 
 .learn-container {
   display: flex;
-  /*align-items: center; */
   margin: 0;
   max-width: 1280px;
   box-sizing: border-box;
@@ -428,31 +446,51 @@ a:hover {
   font-size: 1.05rem;
   font-weight: 100;
 }
-.mobile-image {
+.mobile-learning {
   display: none;
 }
 
-/* Mobile Campus Info */
+/* Mobile Learning Section */
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width:680px)  {
 
-  .info {
-    display: none;
-  }
-  .desktop-image {
+  .learn-container .courses .course-images {
     display: none;
   }
 
-.mobile-image {
-  display: block;
-  width: 100%;
-  margin: auto;
+  .learn-container .courses .mobile-learning {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 16px auto 24px 16px;
+
+  }
+  .mobile-learning h2  {
+    background-color: #778899;
+    font-family: Helvetica;
+    font-size: 1.75rem;
+    margin: 10px 10px;
+    padding: 16px auto 24px 16px;
+    line-height: 2;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .mobile-learning a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .mobile-learning a:hover {
+    color: #b0c4de;
+  }
+  .learning h2 {
+    color: black;
+    font-family: Georgia, sans-serif;
+    font-size: 2rem;
+  }
 }
-
-
-
-}
-
 /* Thesis Section */
 
 .thesis-container {
@@ -486,11 +524,9 @@ a:hover {
   width: 60%;
   height: auto;
   overflow: hidden;
-  /* background-color: white; */
 
 }
-
-.video-container video {
+.thesis video {
   max-width: 100%;
   height: auto;
   display: block;
@@ -549,7 +585,6 @@ a:hover {
 }
 
 .design h3 a {
-  /* color: #708090; */
   color: black;
   font-weight: 600;
   font-family: 'Georgia'; sans-serif;
@@ -561,7 +596,6 @@ a:hover {
 
 .design p {
   color: #696969;
-  /* color: black; */
   font-family: 'Helvetica', sans-serif;
   font-weight: 600;
   padding-top: 10px;
@@ -572,6 +606,40 @@ a:hover {
 
 .design a:hover {
   color: slategray;
+}
+
+/* Mobile Thesis Section */
+
+@media only screen and (max-width: 680px)  {
+
+  .thesis-exhibit {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .thesis-exhibit h2 {
+    color: black;
+    font-family: Georgia, sans-serif;
+    font-size: 2.15rem;
+  }
+
+  .thesis-container .video-container .reimagine {
+    display: none;
+  }
+  .thesis-container .thesis-images {
+    display: none;
+  }
+  .thesis-container .video-container .thesis {
+    width: 100%;
+
+  }
+  .thesis-container .video-container .thesis video {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+
+
 }
 
 /* Footer Section */
@@ -612,4 +680,17 @@ footer span {
 }
 .footer a:hover {
   color: steelblue;
+}
+
+@media only screen and (max-width: 680px) {
+  .footer ul li a {
+    display: none;
+  }
+
+  footer span {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    padding: 16px auto 16px auto;
+  }
 }
